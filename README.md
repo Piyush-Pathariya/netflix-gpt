@@ -29,6 +29,12 @@
   - Update store with Triler Video Data
   - Embedded the Youtube video and make it autoplay & mute
   - Tailwind classes to make MainContainer awesome
+  - Build Secondary Component
+  - Build Movie List
+  - Movie Card
+  - TMDB Image CDN URL
+  - Browse page Amazing with Tailwind CSS
+  - usePopularMovies Custom Hooks
 
 # Features
 

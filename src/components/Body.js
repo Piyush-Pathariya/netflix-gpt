@@ -1,12 +1,9 @@
-import React, { useEffect } from 'react'
+
 import Login from './Login'
 import Browse from './Browse'
 import { createBrowserRouter } from 'react-router-dom'
 import { RouterProvider } from 'react-router-dom'
-import { onAuthStateChanged } from "firebase/auth";
-import { getAuth } from 'firebase/auth'
-import { useDispatch } from 'react-redux'
-import { addUser, removeUser } from '../utills/userSlice'
+import { useDispatch } from 'react-redux';
 
 const Body = () => {
     const dispatch = useDispatch(); 

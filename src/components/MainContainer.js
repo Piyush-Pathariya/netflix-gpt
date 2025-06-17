@@ -4,14 +4,16 @@ import VideoBackground from './VideoBackground';
 
 const MainContainer = () => {
   
-const movies = useSelector(store=>store.movies?.nowPlayingMovies);
- if (movies == null) return;
+const movies = useSelector((store)=>store.movies?.nowPlayingMovies);
+console.log(movies);
+if (!movies || movies.length === 0) return <div>Loading...</div>;
+console.log(movies);
+ if (!movies) return <div>Loading...</div>;
 
-const mainmovie = movies[0];
-console.log(mainmovie);   
+const mainmovie = movies[0];  
 
-const {original_title, overview, id} = mainmovie;
-  
+const {original_title, overview, id }  = mainmovie;
+
     return (
     <div>
     <VideoTitle title = {original_title} overview = {overview} />
