@@ -4,10 +4,16 @@ import MainContainer from './MainContainer';
 import SecondaryContainer from './SecondaryContainer';
 import { useEffect } from 'react';
 import usePopularMovies from '../hooks/usePopularMovies';
+import useTrendingMovies from '../hooks/useTrendingMovies';
+import useUpcomingMovies from '../hooks/useUpcomingMovies';
+import useTopRatedMovies from '../hooks/useTopRatedMovies';
 
 const Browse = () => {
  useNowPlayingMovies();
  usePopularMovies();
+ useTrendingMovies();
+ useUpcomingMovies();
+ useTopRatedMovies();
  
   return  (
   <div>
