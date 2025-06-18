@@ -36,6 +36,9 @@
   - Browse page Amazing with Tailwind CSS
   - usePopularMovies Custom Hooks
   - Build TopRated, Trending, Upcoming Movies Custom Hooks
+  - GPT Search Page
+  - GPT Search Bar
+  - Multi-Language Feature in our gpt search page
 
 # Features
 

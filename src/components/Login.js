@@ -5,6 +5,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword , updateProf
 import { auth } from '../utills/firebase';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utills/userSlice';
+import { BG_URL } from '../utills/constants';
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -82,8 +83,7 @@ const handleButtonClick = () =>{
         <Header />
         <div className="absolute">
           <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/6863f6e8-d419-414d-b5b9-7ef657e67ce4/web/IN-en-20250602-TRIFECTA-perspective_27a3fdfa-126f-4148-b153-55d60b51be6a_small.jpg"
-          alt="Background"
+          src={BG_URL} alt="Background"
           />
         </div>
         <form onSubmit={(e) => e.preventDefault()}
