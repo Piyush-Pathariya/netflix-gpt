@@ -23,7 +23,5 @@ export const SUPPORTED_LANGUAGES = [{identifier: "en", name: "English"},
 
 ]
 
-//  export const OPENAI_KEY = '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'; 
- 
 
  export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
