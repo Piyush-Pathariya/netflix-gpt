@@ -6,7 +6,7 @@ import { BG_URL } from '../utills/constants';
 const GptSearchPage = () => {
   return (
     <div>
-       <div className="absolute -z-20">
+       <div className="fixed -z-10">
           <img
           src={BG_URL} alt="Background"
           />
@@ -14,6 +14,6 @@ const GptSearchPage = () => {
       <GptSearchBar/>
       <GptMovieSuggetion/>
     </div>
-    );
+    )
 };
 export default GptSearchPage;
