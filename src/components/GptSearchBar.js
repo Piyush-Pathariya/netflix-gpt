@@ -12,6 +12,7 @@ const GptSearchBar = () => {
 
     const searchText = useRef(null);
 
+    
     // Search movie in TMDB 
     const searchMovieTMDB = async (movie) => {
       const data = await fetch('https://api.themoviedb.org/3/search/movie?query=' +
@@ -49,8 +50,8 @@ dispatch(addGptMovieResult({movieNames: gptMovies,movieResults: tmdbResults}));
 
     }
   return (
-    <div className='pt-[12%] flex justify-center'>
-        <form className='w-1/2 bg-black grid grid-cols-12' onSubmit={(e) => e.preventDefault()}
+    <div className='pt-[35%] md:pt-[12%] flex justify-center'>
+        <form className='w-full md:w-1/2 bg-black grid grid-cols-12' onSubmit={(e) => e.preventDefault()}
         >
             <input ref={searchText}
              type='text' className='p-2 m-2 col-span-9' placeholder={lang[langkey].gptSearchPlaceholder} />
