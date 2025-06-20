@@ -82,12 +82,12 @@ const handleButtonClick = () =>{
     <div>
         <Header />
         <div className="absolute">
-          <img
+          <img className=' object-cover'
           src={BG_URL} alt="Background"
           />
         </div>
         <form onSubmit={(e) => e.preventDefault()}
-         className=" absolute w-3/12 p-12 my-36 mx-auto right-0 left-0 bg-black text-white rounded-lg bg-opacity-90">
+         className=" absolute w-full md:w-3/12 p-12 my-36 mx-auto right-0 left-0 bg-black text-white rounded-lg bg-opacity-90">
         <h1 className="text-3xl font-bold py-4">
           {isSignInForm ? "Sign In" : "Sign Up"}
            </h1>

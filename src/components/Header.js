@@ -56,11 +56,11 @@ const handleLanguageChange = (e) =>{
  dispatch(changeLanguage(e.target.value));
 };
   return (
-    <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
-        <img  className="w-44" 
+    <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between sm:bg-blue-900 md:bg-green-700">
+        <img  className="w-44 mx-auto md:mx-0" 
         src={LOGO}   alt="logo"/>
 
-{user && (<div className="flex p-2  ">
+{user && (<div className="flex p-2 justify-between ">
  {showGptSearch && (
    <select className="m-2 bg-gray-600 text-white" 
    onChange={handleLanguageChange}>
@@ -73,9 +73,10 @@ const handleLanguageChange = (e) =>{
   >
     {showGptSearch ? "Homepage" : "GPT Search"}
     </button>
-<img className="w-20 h-20 p-2" src={AVATAR}
+<img className="hidden md:block w-20 h-20 p-2" src={AVATAR}
   alt="UserIcon"/>
-<button onClick={handleSignOut} className="font-bold text-yellow-50"> Sign Out</button>
+<button onClick={handleSignOut} className=" mr-20 md:mr-none font-bold text-yellow-50"> (Sign Out)
+</button>
 </div>
   )}
   </div>
